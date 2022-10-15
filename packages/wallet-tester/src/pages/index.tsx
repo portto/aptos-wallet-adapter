@@ -117,7 +117,10 @@ const MainPage = () => {
         };
         const transactionRes = await signAndSubmitTransaction(payload, txOptions);
         await aptosClient.waitForTransaction(transactionRes?.hash || '');
-        const links = [...txLinks, `https://explorer.devnet.aptos.dev/txn/${transactionRes?.hash}`];
+        const links = [
+          ...txLinks,
+          `https://explorer.devnet.aptos.dev/txn/${transactionRes?.hash}?network=${network.name}`
+        ];
         setTxLinks(links);
       }
     } catch (err: any) {
@@ -176,9 +179,15 @@ const MainPage = () => {
         sign: true
       });
       const nonce = 'random_string';
-      const msgPayload = ['pontem', 'petra', 'martian', 'fewcha', 'rise wallet', 'snap'].includes(
-        currentWallet?.adapter?.name?.toLowerCase() || ''
-      )
+      const msgPayload = [
+        'pontem',
+        'petra',
+        'martian',
+        'fewcha',
+        'rise wallet',
+        'snap',
+        'blocto'
+      ].includes(currentWallet?.adapter?.name?.toLowerCase() || '')
         ? {
             message: messageToSign,
             nonce
@@ -228,7 +237,7 @@ const MainPage = () => {
     }
     if (connected && account) {
       return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2" style={{ overflow: 'auto' }}>
           <strong>
             Wallet: <div id="address">{currentWallet?.adapter.name}</div>
           </strong>
@@ -258,7 +267,11 @@ const MainPage = () => {
                 className="w-full"
                 readOnly
                 rows={4}
-                value={typeof signature !== 'string' ? signature.address : signature}
+                value={
+                  typeof signature !== 'string' && signature.address
+                    ? signature.address
+                    : (signature as string)
+                }
               />
             </div>
           ) : (
@@ -304,7 +317,9 @@ const MainPage = () => {
   };
   return (
     <div className="w-full h-[100vh] flex justify-center items-center">
-      <div className="flex justify-center">{renderContent()}</div>
+      <div className="flex justify-center" style={{ overflow: 'auto' }}>
+        {renderContent()}
+      </div>
     </div>
   );
 };
