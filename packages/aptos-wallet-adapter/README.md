@@ -23,13 +23,13 @@ Working on (PR welcome):
 with `yarn`
 
 ```
-yarn add @manahippo/aptos-wallet-adapter
+yarn add @blocto/aptos-wallet-adapter
 ```
 
 with `npm`
 
 ```
-npm install @manahippo/aptos-wallet-adapter
+npm install @blocto/aptos-wallet-adapter
 ```
 
 # Examples
@@ -57,7 +57,7 @@ import {
   SpikaWalletAdapter,
   RiseWalletAdapter,
   FletchWalletAdapter
-} from '@manahippo/aptos-wallet-adapter';
+} from '@blocto/aptos-wallet-adapter';
 
 const wallets = [
   new HippoWalletAdapter(),
@@ -90,7 +90,7 @@ export default App;
 # Web3 Hook
 
 ```typescript
-import { useWallet } from '@manahippo/aptos-wallet-adapter';
+import { useWallet } from '@blocto/aptos-wallet-adapter';
 
 const { connected, account, network, ...rest } = useWallet();
 
@@ -114,7 +114,7 @@ const { connected, account, network, ...rest } = useWallet();
 # Connect & Disconnect
 
 ```typescript
-import { AptosWalletName, useWallet } from "@manahippo/aptos-wallet-adapter"
+import { AptosWalletName, useWallet } from "@blocto/aptos-wallet-adapter"
 
 ...
 
