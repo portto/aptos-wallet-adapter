@@ -69,7 +69,7 @@ export class MartianWalletAdapter extends BaseWalletAdapter {
 
   url = 'https://chrome.google.com/webstore/detail/martian-wallet/efbglgofoippbgcjepnhiblaibcnclgk';
 
-  icon = 'https://raw.githubusercontent.com/hippospace/aptos-wallet-adapter/main/logos/martian.png';
+  icon = 'https://raw.githubusercontent.com/portto/aptos-wallet-adapter/main/logos/martian.png';
 
   protected _provider: IMartianWallet | undefined;
 
