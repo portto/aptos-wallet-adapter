@@ -4,7 +4,7 @@ import { Button, Spin } from 'antd';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { LoadingOutlined } from '@ant-design/icons';
 import { Types } from 'aptos';
-import { SignMessageResponse, useWallet } from '@manahippo/aptos-wallet-adapter';
+import { SignMessageResponse, useWallet } from '@blocto/aptos-wallet-adapter';
 import { aptosClient, faucetClient } from '../config/aptosClient';
 import { AptosAccount } from 'aptos';
 

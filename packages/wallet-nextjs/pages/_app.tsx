@@ -12,7 +12,7 @@ import {
   FletchWalletAdapter,
   AptosSnapAdapter,
   NightlyWalletAdapter
-} from '@manahippo/aptos-wallet-adapter';
+} from '@blocto/aptos-wallet-adapter';
 import { useMemo } from 'react';
 import { message } from 'antd';
 

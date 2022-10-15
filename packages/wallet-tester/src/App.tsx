@@ -13,7 +13,7 @@ import {
   AptosSnapAdapter,
   NightlyWalletAdapter,
   BloctoWalletAdapter
-} from '@manahippo/aptos-wallet-adapter';
+} from '@blocto/aptos-wallet-adapter';
 import { Col, message, Row, Switch, Typography } from 'antd';
 import MainPage from './pages';
 

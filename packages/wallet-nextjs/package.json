@@ -1,5 +1,5 @@
 {
-  "name": "@manahippo/wallet-nextjs",
+  "name": "@blocto/wallet-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "@manahippo/aptos-wallet-adapter": "file:../aptos-wallet-adapter",
+    "@blocto/aptos-wallet-adapter": "file:../aptos-wallet-adapter",
     "next": "12.2.5",
     "antd": "^4.21.7",
     "aptos": "^1.3.14",
