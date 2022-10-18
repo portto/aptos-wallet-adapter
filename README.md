@@ -10,17 +10,19 @@ React `WalletProvider` supporting loads of aptos wallets.
 
 Supports:
 
-- [Blocto wallet](https://portto.com/download)
+- [Aptos official wallet](https://github.com/aptos-labs/aptos-core/releases/tag/wallet-v0.1.1)
 - [Petra wallet](https://petra.app/)
 - [Martian wallet](https://martianwallet.xyz/)
 - [Fewcha wallet](https://fewcha.app/)
+- [Hippo wallet](https://github.com/hippospace/hippo-wallet)
+- [Hippo web wallet](https://hippo-wallet-test.web.app/)
 - [Pontem Wallet](https://pontem.network/pontem-wallet)
 - [Spika wallet](https://spika.app)
 - [Rise wallet](https://risewallet.io/)
 - [HyperPay wallet](https://www.hyperpay.io/)
 - [Fletch wallet](http://fletchwallet.io/)
-- [Spika web wallet](https://spika.app)
 - [Aptos snap](https://chrome.google.com/webstore/detail/metamask-flask-developmen/ljfoeinjpaedjfecbmggjgodbgkmjkjk)
+- [Blocto wallet](https://portto.com/download)
 
 
 **Please refer to the readme within aptos-wallet-adapter pacakages**
