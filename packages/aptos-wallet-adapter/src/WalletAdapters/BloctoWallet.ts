@@ -68,7 +68,7 @@ export class BloctoWalletAdapter extends BaseWalletAdapter {
 
   constructor(
     { network, timeout = 10000, bloctoAppId = '' }: BloctoWalletAdapterConfig = {
-      network: WalletAdapterNetwork.Devnet
+      network: WalletAdapterNetwork.Mainnet
     }
   ) {
     super();
